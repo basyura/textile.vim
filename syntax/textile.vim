@@ -25,7 +25,9 @@ syn case match
 " Textile syntax: <http://textism.com/tools/textile/>
 
 " Inline elements.
-syn match txtEmphasis    /_[^_]\+_/
+"syn match txtEmphasis    /_[^_]\+_/
+syn match txtEmphasis    /_[^_]\+_\s\{1,}/
+syn match txtEmphasis    /_[^_]\+_$/
 syn match txtBold        /\*[^*]\+\*/
 syn match txtCite        /??.\+??/
 syn match txtDeleted     /-[^-]\+-/
