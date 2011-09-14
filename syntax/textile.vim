@@ -42,8 +42,8 @@ syn match txtHeader2     /^h2\. .\+/
 syn match txtHeader3     /^h[3-6]\..\+/
 syn match txtBlockquote  /^bq\./
 syn match txtFootnoteDef /^fn[0-9]\+\./
-syn match txtListBullet  /\v^\*+ /
-syn match txtListBullet2  /\v^(\*\*)+ /
+syn match txtListBullet  /\s\{0,}\v\*+ /
+syn match txtListBullet2  /\s\{0,}\v(\*\*)+ /
 syn match txtListNumber  /\v^#+ /
 syn match txtListNumber2  /\v^(##)+ /
 
